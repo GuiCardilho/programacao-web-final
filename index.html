@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,400i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <title>Gabriel Santos Araujo</title>
+</head>
+
+<body>
+
+    <div class="gsa-trigger-topbar"></div>
+    <div class="border-top-left"></div>
+    <div class="border-bottom-right"></div>
+
+    <div class="gsa-preloader">
+        <div class="gsa-preloader-inner">
+            <img src="images/lemon-loader.svg" class="gsa-mar-bottom-15" />
+            <p class="gsa-text-light gsa-mar-top-15">Aguarde um pouquinho...</p>
+        </div>
+    </div>
+
+    <div class="gsa-overlay gsa-toggle-modal"></div>
+    <div class="gsa-menu-overlay gsa-toggle-menu"></div>
+
+    <div class="gsa-modal gsa-bg-black" id="gsa-modal-orcamento">
+        <div class="gsa-modal-header">
+            <h1 class="gsa-title gsa-text-green gsa-mar-bottom-15">
+                Solicite um orçamento
+            </h1>
+
+            <button class="gsa-close-modal gsa-toggle-modal">
+                X
+            </button>
+        </div>
+
+        <div class="gsa-modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="gsa-text-light">Por favor informe os dados abaixo e eu entrarei em contato com você o mais
+                        breve
+                        possível.</p>
+                </div>
+            </div>
+            <div class="row gsa-mar-top-15">
+                <div class="col-sm-12">
+                    <form class="gsa-form">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <label for="Nome" class="gsa-text-light">Nome</label>
+                                <input type="text" name="Nome" id="gsa-nome" class="gsa-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="Email" class="gsa-text-light">Email</label>
+                                <input type="email" name="Email" id="gsa-email" class="gsa-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="Telefone" class="gsa-text-light">Telefone</label>
+                                <input type="tel" name="Telefone" id="gsa-telefone" class="gsa-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="Site" class="gsa-text-light">Site</label>
+                                <input type="text" name="Site" id="gsa-site" class="gsa-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 gsa-mar-top-15">
+                                <label for="Mensagem" class="gsa-text-light">Descreva abaixo o projeto na qual você
+                                    precisa de orçamento:</label>
+                                <textarea id="gsa-mensagem" name="Mensagem" rows="8" class="gsa-textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-end gsa-mar-top-15">
+                            <div class="col-sm-12 col-md-6">
+                                <button class="gsa-btn gsa-btn-large gsa-btn-green gsa-btn-block">Enviar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="gsa-topbar">
+        <div class="gsa-logo gsa-logo-big">
+            <img src="images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
+        </div>
+
+        <nav class="gsa-menu">
+            <a href="#">Home</a>
+            <a href="pages/portfolio.html">Portfolio</a>
+            <a href="pages/sobre.html">Sobre</a>
+            <a href="pages/curriculo.html">Curriculo</a>
+        </nav>
+    </header>
+
+    <button class="gsa-btn-menu-mob gsa-toggle-menu">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <nav class="gsa-menu-mob gsa-menu-is-closed">
+            <a href="#">Home</a>
+            <a href="pages/portfolio.html">Portfolio</a>
+            <a href="pages/sobre.html">Sobre</a>
+            <a href="pages/curriculo.html">Curriculo</a>
+    </nav>
+
+    <div class="gsa-contact-info gsa-bg-black gsa-text-light">
+        <div class="gsa-contact-info-inner">
+            <h2 class="gsa-title gsa-text-green">Contato</h2>
+                <p>
+                    <a
+                        href="mailto:email@email.com"
+                        style="text-decoration: none; color: #ffffff"
+                        >email@email.com</a
+                    >
+                </p>
+                <p>
+                    <a
+                        href="tel:5500999998888"
+                        style="text-decoration: none; color: #ffffff"
+                        >+55 (00) 9 9999 8888</a
+                    >
+                </p>
+            <div class="gsa-social-links">
+                <a href="#" class="gsa-social">
+                    <img src="images/icon-instagram.svg" alt="Instagram" />
+                </a>
+                <a href="#" class="gsa-social">
+                    <img src="images/icon-twitter.svg" alt="Twitter" />
+                </a>
+                <a href="#" class="gsa-social">
+                    <img src="images/icon-dribbble.svg" alt="Dribbble" />
+                </a>
+            </div>
+        </div>
+        <div class="gsa-corner">
+        </div>
+
+    </div>
+
+    <button class="gsa-btn-contact">
+
+    </button>
+
+    <div class="gsa-page-wrapper">
+
+        <section class="gsa-full-height gsa-first-section gsa-home-presentation" id="gsa-home-presentation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        class="col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 gsa-display-text">
+
+                        <h1 class="gsa-title gsa-text-green gsa-title-xlarge">Olá!</h1>
+
+                        <p class="gsa-text-light">Meu nome é <span class="gsa-text-green">Gabriel Santos Araujo</span>, sou <span class="gsa-text-green">
+                            Analista de Infraestrutura</span> com foco em tecnologia da informação. 
+                            Em meu trabalho, lido com complexas estruturas de redes, segurança de dados e otimização de sistemas. 
+                            Sou <span class="gsa-text-green">apaixonado por encontrar soluções tecnológicas </span>aque impulsionem o crescimento e a eficiência organizacional.</p>
+
+
+                        <button class="gsa-btn gsa-btn-large gsa-btn-green gsa-mar-top-15 gsa-toggle-modal">solicite um
+                            orçamento</button>
+                    </div>
+                </div>
+
+                <div class="gsa-scroll-down">
+                    <div class="gsa-arrow-down">
+                        <img src="images/arrow-down.svg" alt="Role a Página" />
+                    </div>
+                </div>
+        </section>
+
+        <section class="gsa-full-height" id="gsa-home-portfolio">
+            <div class="container-fluid gsa-no-padding">
+                <div class="row">
+                    <div class="col-sm-12 d-block d-sm-block d-lg-none gsa-mar-top-30 gsa-pad-top-30">
+                        <h2 class="gsa-title-large gsa-text-green gsa-title gsa-text-center">Projetos Selecionados</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-lg-2 order-2 order-sm-2 order-lg-1">
+                        <div class="gsa-portfolio-navigator">
+                            <div class="gsa-navigator-counter d-none d-sm-none d-lg-block">
+                                <span class="gsa-text-green">01</span>
+                            </div>
+                            <nav class="gsa-item-navigator d-none d-sm-none d-lg-block">
+                                <a href="#" class="gsa-item-active" data-nav="1"></a>
+                                <a href="#" data-nav="2"></a>
+                                <a href="#" data-nav="3"></a>
+                                <a href="#" data-nav="4"></a>
+                                <a href="#" data-nav="5"></a>
+                            </nav>
+                            <div class="gsa-items-next-prev gsa-no-radius-left">
+                                <div class="gsa-item-prev">
+                                    <ion-icon name="arrow-dropleft"></ion-icon>
+                                </div>
+
+                                <div class="gsa-items-counter">
+                                    <span class="gsa-current-slide">01</span>
+                                    /
+                                    <span class="gsa-total-slide">05</span>
+                                </div>
+
+                                <div class="gsa-item-next">
+                                    <ion-icon name="arrow-dropright"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-10 order-1 order-sm-1 order-lg-2">
+                        <div class="gsa-slider-container gsa-full-height">
+                            <ul class="gsa-slider-list gsa-full-height">
+                                <li class="gsa-portfolio-item gsa-slide-active" data-slide="1">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="gsa-portfolio-item-info gsa-text-light gsa-fade-from-left">
+                                                <h1 class="gsa-title gsa-title-large gsa-mar-bottom-15">Infraestrutura de Rede Expansível</h1>
+                                                <p class="gsa-mar-bottom-30">Projeto de expansão e otimização de rede corporativa, com foco em segurança e eficiência.</p>
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-large gsa-btn-green">ver projeto</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="gsa-portfolio-item-thumb">
+                                                <div
+                                                    class="gsa-portfolio-item-box d-none d-sm-none d-lg-block gsa-scale-right">
+                                                </div>
+                                                <img src="images/thumb-1.jpg" alt="Startup Rocketz"
+                                                    title="Startup Rocketz" class="gsa-scale-up" />
+                                                <a href="#" class="gsa-btn gsa-btn-medium gsa-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="gsa-portfolio-item" data-slide="2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="gsa-portfolio-item-info gsa-text-light">
+                                                <h1 class="gsa-title gsa-title-large gsa-mar-bottom-15">Soluções Avançadas de Monitoramento</h1>
+                                                <p class="gsa-mar-bottom-30">Implementação de um sistema de monitoramento de segurança de TI integrado para proteção de dados.</p>
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-large gsa-btn-green">ver projeto</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="gsa-portfolio-item-thumb">
+                                                <div class="gsa-portfolio-item-box d-none d-sm-none d-lg-block"></div>
+                                                <img src="images/thumb-2.jpg" alt="Manage It!" title="Manage It!" />
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-medium gsa-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="gsa-portfolio-item" data-slide="3">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="gsa-portfolio-item-info gsa-text-light">
+                                                <h1 class="gsa-title gsa-title-large gsa-mar-bottom-15">Data Center de Alta Performance</h1>
+                                                <p class="gsa-mar-bottom-30">Projeto de modernização e otimização de data center para aumentar a capacidade e eficiência.</p>
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-large gsa-btn-green">ver projeto</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="gsa-portfolio-item-thumb">
+                                                <div class="gsa-portfolio-item-box d-none d-sm-none d-lg-block"></div>
+                                                <img src="images/thumb-3.jpg" alt="Vinyassa App" title="Vinyassa App" />
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-medium gsa-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="gsa-portfolio-item" data-slide="4">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="gsa-portfolio-item-info gsa-text-light">
+                                                <h1 class="gsa-title gsa-title-large gsa-mar-bottom-15">Sistema Integrado de Gerenciamento de TI</h1>
+                                                <p class="gsa-mar-bottom-30">Criação de um sistema integrado para gerenciamento eficaz de recursos de TI em ambientes corporativos.</p>
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-large gsa-btn-green">ver projeto</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="gsa-portfolio-item-thumb">
+                                                <div class="gsa-portfolio-item-box d-none d-sm-none d-lg-block"></div>
+                                                <img src="images/thumb-4.jpg" alt="Conteúdo é Rei!"
+                                                    title="Conteúdo é Rei!" />
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-medium gsa-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="gsa-portfolio-item" data-slide="5">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="gsa-portfolio-item-info gsa-text-light">
+                                                <h1 class="gsa-title gsa-title-large gsa-mar-bottom-15">Estratégias de Cloud Computing</h1>
+                                                <p class="gsa-mar-bottom-30">Desenvolvimento e implementação de soluções de cloud computing para otimização de processos empresariais.</p>
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-large gsa-btn-green">ver projeto</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
+                                            <div class="gsa-portfolio-item-thumb">
+                                                <div class="gsa-portfolio-item-box d-none d-sm-none d-lg-block"></div>
+                                                <img src="images/thumb-5.jpg" alt="Controle Total"
+                                                    title="Controle Total" />
+                                                <a href="./pages/portfolio.html" class="gsa-btn gsa-btn-medium gsa-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Animando Elementos on Scroll com Waypoints
+        var myScrollDown = document.querySelector('.gsa-scroll-down');
+        var waypoint = new Waypoint({
+            element: myScrollDown,
+            handler: function () {
+                myScrollDown.classList.toggle('gsa-fade-out');
+            },
+            offset: '80%'
+        });
+    </script>
+</body>
+
+</html>
