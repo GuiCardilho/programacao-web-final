@@ -520,11 +520,11 @@ label {
     }
 
     .gsa-home-presentation {
-        background-image: url("../images/joao-lemon-designer-home.png");
+        background-image: url("../images/gabriel-santos-araujo.png");
         background-repeat: no-repeat;
-        background-position: 50% bottom;
+        background-position: right bottom;
         position: relative;
-        background-size: 130% auto;
+        background-size: contain !important;
     }
 
     .gsa-home-presentation h1 {
